@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+       <!-- navbar manu start.. -->
+    <div class="container">
+       <div class="navbar">
+           <div class="logo">
+               <img src="image/logo.png" alt="logo image" class="logo-img">
+           </div>
+           <div class="buton1">
+                <button type="button" class="btn" id="btn1" onclick="move()">
+                move
+                </button>
+                <button type="button" class="btn" id="btn2" onclick=" remove() ">
+                remove
+                </button>
+            </div>
+          
+           <ul class="bavbar-nav" id="nav">
+               <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+               <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+               <li class="nav-item"><a href="#" class="nav-link">Section</a></li>
+               <li class="nav-item"><a href="#" class="nav-link">Other</a></li>
+           </ul>
+          
+       </div>
+      
+    </div>
+      <!-- navbar manu end.. -->
+     <section class=" section-1">
+       <div class="text-title">
+           <h1 class="title">The side member</h1>
+       </div>
+        
+     </section>
+
+      <!-- card-section start -->
+    
+
+       <section class="card-section">
+        <div class="main-card">
+            <div class="card">
+                <div class="card-ing">
+                    <img src="image/mother.jpg" alt=" card image" class="card-image">
+                </div>
+                <h1 class="card-text">My sweet mother </h1>
+               <p class="card-pra">
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem assumenda deleniti culpa possimus non, similique numquam velit repellat esse corporis!
+               </p>
+            </div>
+
+
+            <div class="card">
+                <div class="card-ing">
+                    <img src="image/sister.jpg" alt=" card image" class="card-image">
+                </div>
+                <h1 class="card-text">My sweet sister </h1>
+               <p class="card-pra">
+                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem assumenda deleniti culpa possimus non, similique numquam velit repellat esse corporis!
+               </p>
+            </div>
+                   
+        </div>
+       </section>
+       <footer class="footer">
+           <h1 class="footer-text">
+               <samp class="span">The Best</samp> &nbsp; My Mother
+           </h1>
+           <p class="footer-pra">
+               my mother name is anu bala,<br> bristi,jahan,dipa,cona etc.
+           </p>
+       </footer>
+
+        <!-- card-section end -->
+    <script>
+        let btn1=document.querySelector('#btn1');
+        function move(){
+           var nav=document.querySelector("#nav");
+           nav.style.display="block";
+        }
+     
+        function remove(){
+           var nav=document.querySelector("#nav");
+           nav.style.display="none";
+        }
+    </script>
+</body>
+</html>
